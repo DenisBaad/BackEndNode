@@ -1,0 +1,1 @@
+{"version":3,"file":"IGetAllPlanoUseCase.d.ts","sourceRoot":"","sources":["../../../../../src/application/useCases/planos/getall/IGetAllPlanoUseCase.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,iBAAiB,EAAE,MAAM,qEAAqE,CAAC;AAExG,MAAM,WAAW,mBAAmB;IAChC,OAAO,CAAC,SAAS,EAAE,MAAM,GAAG,OAAO,CAAC,iBAAiB,EAAE,CAAC,CAAA;CAC3D"}

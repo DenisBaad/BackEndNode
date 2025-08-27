@@ -1,0 +1,1 @@
+{"version":3,"file":"IEditFaturaUseCase.d.ts","sourceRoot":"","sources":["../../../../../src/application/useCases/faturas/edit/IEditFaturaUseCase.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,iBAAiB,EAAE,MAAM,qEAAqE,CAAC;AAExG,MAAM,WAAW,kBAAkB;IAC/B,OAAO,CAAC,EAAE,EAAE,MAAM,EAAE,OAAO,EAAE,iBAAiB,GAAG,OAAO,CAAC,IAAI,CAAC,CAAA;CACjE"}

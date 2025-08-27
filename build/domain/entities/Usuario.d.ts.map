@@ -1,0 +1,1 @@
+{"version":3,"file":"Usuario.d.ts","sourceRoot":"","sources":["../../../src/domain/entities/Usuario.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,UAAU,EAAE,MAAM,cAAc,CAAC;AAE1C,qBACa,OAAQ,SAAQ,UAAU;IAC3B,IAAI,EAAG,MAAM,CAAC;IACd,KAAK,EAAG,MAAM,CAAC;IACf,KAAK,EAAG,MAAM,CAAC;CAC1B"}

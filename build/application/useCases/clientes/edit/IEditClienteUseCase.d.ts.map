@@ -1,0 +1,1 @@
+{"version":3,"file":"IEditClienteUseCase.d.ts","sourceRoot":"","sources":["../../../../../src/application/useCases/clientes/edit/IEditClienteUseCase.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,kBAAkB,EAAE,MAAM,uEAAuE,CAAC;AAE3G,MAAM,WAAW,mBAAmB;IAChC,OAAO,CAAC,EAAE,EAAE,MAAM,EAAE,OAAO,EAAE,kBAAkB,GAAG,OAAO,CAAC,IAAI,CAAC,CAAA;CAClE"}

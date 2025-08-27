@@ -1,0 +1,1 @@
+{"version":3,"file":"IEditPlanoUseCase.d.ts","sourceRoot":"","sources":["../../../../../src/application/useCases/planos/edit/IEditPlanoUseCase.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,MAAM,mEAAmE,CAAC;AAErG,MAAM,WAAW,iBAAiB;IAC9B,OAAO,CAAC,EAAE,EAAE,MAAM,EAAE,OAAO,EAAE,gBAAgB,GAAG,OAAO,CAAC,IAAI,CAAC,CAAA;CAChE"}

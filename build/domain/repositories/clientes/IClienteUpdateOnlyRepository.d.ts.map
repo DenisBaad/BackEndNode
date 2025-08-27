@@ -1,0 +1,1 @@
+{"version":3,"file":"IClienteUpdateOnlyRepository.d.ts","sourceRoot":"","sources":["../../../../src/domain/repositories/clientes/IClienteUpdateOnlyRepository.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AACnC,OAAO,EAAE,OAAO,EAAE,MAAM,wBAAwB,CAAC;AAEjD,MAAM,WAAW,4BAA4B;IACzC,WAAW,CAAC,EAAE,EAAE,QAAQ,EAAE,OAAO,EAAE,OAAO,GAAG,OAAO,CAAC,IAAI,CAAC,CAAA;CAC7D"}

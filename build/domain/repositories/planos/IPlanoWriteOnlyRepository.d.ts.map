@@ -1,0 +1,1 @@
+{"version":3,"file":"IPlanoWriteOnlyRepository.d.ts","sourceRoot":"","sources":["../../../../src/domain/repositories/planos/IPlanoWriteOnlyRepository.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,sBAAsB,CAAC;AAE7C,MAAM,WAAW,yBAAyB;IACtC,QAAQ,CAAC,KAAK,EAAE,KAAK,GAAG,OAAO,CAAC,IAAI,CAAC,CAAA;CACxC"}

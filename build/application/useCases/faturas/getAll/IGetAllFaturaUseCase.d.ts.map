@@ -1,0 +1,1 @@
+{"version":3,"file":"IGetAllFaturaUseCase.d.ts","sourceRoot":"","sources":["../../../../../src/application/useCases/faturas/getAll/IGetAllFaturaUseCase.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,kBAAkB,EAAE,MAAM,uEAAuE,CAAC;AAE3G,MAAM,WAAW,oBAAoB;IACjC,OAAO,CAAC,SAAS,EAAE,MAAM,GAAG,OAAO,CAAC,kBAAkB,EAAE,CAAC,CAAA;CAC5D"}

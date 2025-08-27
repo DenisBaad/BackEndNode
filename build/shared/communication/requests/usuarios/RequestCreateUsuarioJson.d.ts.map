@@ -1,0 +1,1 @@
+{"version":3,"file":"RequestCreateUsuarioJson.d.ts","sourceRoot":"","sources":["../../../../../src/shared/communication/requests/usuarios/RequestCreateUsuarioJson.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,wBAAwB;IACrC,IAAI,EAAE,MAAM,CAAC;IACb,KAAK,EAAE,MAAM,CAAC;IACd,KAAK,EAAE,MAAM,CAAC;CACjB"}

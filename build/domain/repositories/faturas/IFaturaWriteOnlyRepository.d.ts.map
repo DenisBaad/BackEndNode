@@ -1,0 +1,1 @@
+{"version":3,"file":"IFaturaWriteOnlyRepository.d.ts","sourceRoot":"","sources":["../../../../src/domain/repositories/faturas/IFaturaWriteOnlyRepository.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,uBAAuB,CAAC;AAE/C,MAAM,WAAW,0BAA0B;IACvC,QAAQ,CAAC,MAAM,EAAE,MAAM,GAAG,OAAO,CAAC,IAAI,CAAC,CAAA;CAC1C"}

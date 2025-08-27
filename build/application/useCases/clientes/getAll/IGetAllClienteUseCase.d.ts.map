@@ -1,0 +1,1 @@
+{"version":3,"file":"IGetAllClienteUseCase.d.ts","sourceRoot":"","sources":["../../../../../src/application/useCases/clientes/getAll/IGetAllClienteUseCase.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,mBAAmB,EAAE,MAAM,yEAAyE,CAAC;AAE9G,MAAM,WAAW,qBAAqB;IAClC,OAAO,CAAC,SAAS,EAAE,MAAM,GAAG,OAAO,CAAC,mBAAmB,EAAE,CAAC,CAAA;CAC7D"}

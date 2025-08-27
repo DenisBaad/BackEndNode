@@ -1,0 +1,1 @@
+{"version":3,"file":"IClienteWriteOnlyRepository.d.ts","sourceRoot":"","sources":["../../../../src/domain/repositories/clientes/IClienteWriteOnlyRepository.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,wBAAwB,CAAC;AAEjD,MAAM,WAAW,2BAA2B;IACxC,QAAQ,CAAC,OAAO,EAAE,OAAO,GAAG,OAAO,CAAC,IAAI,CAAC,CAAA;CAC5C"}
