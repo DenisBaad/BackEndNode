@@ -15,11 +15,14 @@ planosRouter.post('/', async (req: Request<{}, {}, RequestPlanoJson>, res: Respo
     return res.status(StatusCodes.CREATED).json(result);
 });
 
-planosRouter.get('/', async (req, res: Response<ResponsePlanoJson[]>) => {
+planosRouter.get('/', async (req, res: Response) => {
     const usuarioId = (req as any).userId;
-    const result = await container.resolve<IGetAllPlanoUseCase>("IGetAllPlanoUseCase").execute(usuarioId);
+    const pageNumber = parseInt(req.query.pageNumber as string) || 1;
+    const pageSize = parseInt(req.query.pageSize as string) || 10;
+    const search = req.query.search as string | undefined;
+    const result = await container.resolve<IGetAllPlanoUseCase>("IGetAllPlanoUseCase").execute(usuarioId, pageNumber, pageSize, search);
     return res.status(StatusCodes.OK).json(result);
-})
+});
 
 planosRouter.put('/:id', async (req: Request<{id: string}, {}, RequestPlanoJson>, res: Response<null>) => {
     await container.resolve<IEditPlanoUseCase>("IEditPlanoUseCase").execute(req.params.id, req.body);

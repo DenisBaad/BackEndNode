@@ -17,9 +17,11 @@ faturasRouter.post('/', async (req: Request<{}, {}, RequestFaturaJson>, res: Res
     return res.status(StatusCodes.CREATED).json(result);
 })
 
-faturasRouter.get('/', async (req, res: Response<ResponseFaturaJson[]>) => {
+faturasRouter.get('/', async (req, res: Response) => {
     const usuarioId = (req as any).userId;
-    const result = await container.resolve<GetAllFaturaUseCase>("IGetAllFaturaUseCase").execute(usuarioId);
+    const pageNumber = parseInt(req.query.pageNumber as string) || 1;
+    const pageSize = parseInt(req.query.pageSize as string) || 10;
+    const result = await container.resolve<GetAllFaturaUseCase>("IGetAllFaturaUseCase").execute(usuarioId, pageNumber, pageSize);
     return res.status(StatusCodes.OK).json(result);
 })
 

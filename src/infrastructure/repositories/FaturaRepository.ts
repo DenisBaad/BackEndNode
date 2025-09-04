@@ -5,6 +5,7 @@ import { IFaturaUpdateOnlyRepository } from "../../domain/repositories/faturas/I
 import { IFaturaWriteOnlyRepository } from "../../domain/repositories/faturas/IFaturaWriteOnlyRepository";
 import { ResponseFaturaJson } from "../../shared/communication/responses/faturas/ResponseFaturaJson";
 import { ZeusContext } from "../database/ZeusContext";
+import { PagedResult } from "../../shared/communication/responses/PagedResult";
 
 export class FaturaRepository implements IFaturaWriteOnlyRepository, IFaturaReadOnlyRepository, IFaturaUpdateOnlyRepository {
     private readonly _context = ZeusContext.getMongoRepository(Fatura)
@@ -13,8 +14,17 @@ export class FaturaRepository implements IFaturaWriteOnlyRepository, IFaturaRead
         await this._context.save(fatura);
     }
 
-    async getAllAsync(usuarioId: string): Promise<ResponseFaturaJson[]> {
-        return await this._context.find({where: {usuarioId}})
+    async getAllAsync(usuarioId: string, pageNumber: number, pageSize: number): Promise<PagedResult<ResponseFaturaJson>> {
+        const where: any = { usuarioId };
+
+        const totalCount = await this._context.countDocuments(where);
+        const items = await this._context.find({
+            where,
+            skip: (pageNumber - 1) * pageSize,
+            take: pageSize,
+        });
+
+        return new PagedResult<ResponseFaturaJson>(items, totalCount);
     }
 
     async getByIdAsync(_id: ObjectId): Promise<Fatura | null> {

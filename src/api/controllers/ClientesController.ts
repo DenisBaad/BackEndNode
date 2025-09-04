@@ -16,9 +16,12 @@ clientesRouter.post('/', async (req: Request<{}, {}, RequestClienteJson>, res: R
     return res.status(StatusCodes.CREATED).json(result);
 })
 
-clientesRouter.get('/', async (req, res: Response<ResponseClienteJson[]>) => {
+clientesRouter.get('/', async (req, res: Response) => {
     const usuarioId = (req as any).userId;
-    const result = await container.resolve<GetAllClienteUseCase>("IGetAllClienteUseCase").execute(usuarioId);
+    const pageNumber = parseInt(req.query.pageNumber as string) || 1;
+    const pageSize = parseInt(req.query.pageSize as string) || 10;
+    const search = req.query.search as string | undefined;
+    const result = await container.resolve<GetAllClienteUseCase>("IGetAllClienteUseCase").execute(usuarioId, pageNumber, pageSize, search);
     return res.status(StatusCodes.OK).json(result);
 })
 
